@@ -7,7 +7,7 @@
 
 .btnSelect {
   padding-left: 1.5em;
-  background-image: url('/src/assets/images/icon-units.svg');
+  background-image: url("../../../assets/images/icon-units.svg");
   background-repeat: no-repeat;
   background-position: left center;
 }

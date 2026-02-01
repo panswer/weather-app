@@ -1,7 +1,7 @@
 .weatherNowContainer {
   width: 350px;
   height: 300px;
-  background-image: url("/src/assets/images/bg-today-small.svg");
+  background-image: url("../../../assets/images/bg-today-small.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -64,7 +64,7 @@
   .weatherNowContainer {
     justify-self: end;
     margin: 2em 0 0 0;
-    background-image: url("/src/assets/images/bg-today-large.svg");
+    background-image: url("../../../assets/images/bg-today-large.svg");
     width: 700px;
     height: 250px;
     grid-template: "area temperature";

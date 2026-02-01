@@ -6,8 +6,6 @@ export const dailyParams = ["temperature_2m_max", "temperature_2m_min", "sunrise
 
 export const hourlyParams = ["temperature_2m", "weather_code", "precipitation", "weather_code"];
 
-export const imgFolder = '/src/assets/images/';
+export const imgFolder = '/assets/images/';
 
-export const apiGeo = 'http://ip-api.com/json';
-
-export const apiGeoFieldQuery = ["status", "message", "country", "city", "lat", "lon", "query"];
+export const apiGeo = 'https://nominatim.openstreetmap.org/reverse';
