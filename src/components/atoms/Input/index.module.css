@@ -1,0 +1,38 @@
+.inputStyle {
+  background-color: transparent;
+  border: none;
+  color: var(--color-neutral-300);
+  width: 100%;
+  height: 100%;
+  outline: none;
+  font-size: 1.15em;
+}
+
+.inputStyle:hover{
+  cursor: pointer;
+}
+
+.inputStyle::placeholder {
+  color: var(--color-neutral-300);
+}
+
+.inputStyle:-webkit-autofill,
+.inputStyle:-webkit-autofill:hover,
+.inputStyle:-webkit-autofill:focus,
+.inputStyle:-webkit-autofill:active {
+  -webkit-box-shadow: transparent !important;
+}
+
+.inputStyle:-moz-autofill,
+.inputStyle:-moz-autofill:hover,
+.inputStyle:-moz-autofill:focus,
+.inputStyle:-moz-autofill:active {
+  background-color: transparent !important;
+}
+
+.inputStyle:autofill,
+.inputStyle:autofill:hover,
+.inputStyle:autofill:focus,
+.inputStyle:autofill:active {
+  background-color: transparent !important;
+}

@@ -1,0 +1,86 @@
+.weatherNowContainer {
+  width: 350px;
+  height: 300px;
+  background-image: url("/src/assets/images/bg-today-small.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin: 0 auto;
+  display: grid;
+  grid-template: "area" "temperature";
+  font-family: "DM Sans";
+  color: var(--color-neutral-0);
+  justify-content: center;
+}
+
+.weatherNowContainer[data-status="empty"],
+.weatherNowContainer[data-status="loading"] {
+  background-image: none;
+  background-color: var(--color-neutral-800);
+  border-radius: 8px;
+  color: var(--color-neutral-300);
+  justify-content: center;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.areaContent {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  text-align: center;
+  gap: 0.5em;
+}
+
+.locationContent {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.nowContent {
+  color: var(--color-neutral-200);
+}
+
+.temperatureContent {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.weatherImgContent {
+  height: 115px;
+  width: 115px;
+}
+
+.temperature {
+  font-size: 4.5em;
+}
+
+.loadingText {
+  font-size: 1em;
+}
+
+@media screen and (min-width: 1024px) {
+  .weatherNowContainer {
+    justify-self: end;
+    margin: 2em 0 0 0;
+    background-image: url("/src/assets/images/bg-today-large.svg");
+    width: 700px;
+    height: 250px;
+    grid-template: "area temperature";
+    justify-content: space-between;
+  }
+
+  .areaContent {
+    text-align: left;
+    margin-left: 1.5em;
+  }
+
+  .temperatureContent {
+    margin-right: 1.5em;
+  }
+
+  .temperature {
+    font-size: 3em;
+  }
+}

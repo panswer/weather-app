@@ -1,0 +1,38 @@
+.loadingAnimationContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-direction: row;
+  height: 3em;
+  align-self: flex-end;
+}
+
+.loadShape {
+  margin-bottom: 0;
+  animation-name: loadingAnimation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: inherit;
+}
+
+.loadShape:nth-child(2) {
+  animation-delay: .5s;
+}
+
+.loadShape:nth-child(3) {
+  animation-delay: .75s;
+}
+
+@keyframes loadingAnimation {
+  0% {
+    margin-bottom: 0;
+  }
+
+  50% {
+    margin-bottom: 1em;
+  }
+
+  100% {
+    margin-bottom: 0;
+  }
+}

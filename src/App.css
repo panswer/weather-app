@@ -1,0 +1,40 @@
+.main_title-content {
+  text-align: center;
+  padding: 1em 1.5em;
+  font-size: 1.75em;
+}
+
+.search_input-section {
+  padding: 0 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+@media screen and (min-width: 1024px) {
+  .main-container {
+    margin-bottom: 1em;
+  }
+
+  .search_input-section {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  button.btn-search {
+    width: auto;
+    padding: 0.5em 1em;
+  }
+
+  .main-divider {
+    display: grid;
+    grid-template-areas: "current hourly" "current_detail hourly" "daily hourly";
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

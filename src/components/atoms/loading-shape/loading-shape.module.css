@@ -1,0 +1,5 @@
+.loadingShape {
+  background-color: var(--color-neutral-200);
+  border-radius: 8px;
+  padding: .5em;
+}

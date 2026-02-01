@@ -1,0 +1,85 @@
+.selectComponent {
+  position: relative;
+  font-family: "DM Sans";
+  color: var(--color-neutral-0);
+}
+
+.selectBtn {
+  background-color: var(--color-neutral-700);
+  border: 1px solid var(--color-neutral-600);
+  padding: 0.5em 2em 0.5em 0.5em;
+  border-radius: 8px;
+  color: var(--color-neutral-0);
+  font-size: 1em;
+  background-image: url("/src/assets/images/icon-dropdown.svg");
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: center;
+}
+
+.selectBtn:hover {
+  cursor: pointer;
+}
+
+.selectComponent:focus-within > .selectSection {
+  display: flex;
+}
+
+.selectSection {
+  display: none;
+  position: absolute;
+  margin: 0.5em 0;
+  right: 0;
+  background-color: var(--color-neutral-700);
+  padding: 0.5em;
+  border-radius: 8px;
+  flex-direction: column;
+  border: 1px solid var(--color-neutral-600);
+  min-width: 150px;
+  z-index: 100;
+}
+
+.sectionGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionGroup:not(:last-child) {
+  border-bottom: 1px solid var(--color-neutral-600);
+}
+
+.selectTitle {
+  font-family: "DM Sans";
+  color: var(--color-neutral-300);
+  font-size: 0.8em;
+  display: inline-block;
+  padding: 0.5em;
+  cursor: default;
+}
+
+.selectOption {
+  background-color: transparent;
+  border: none;
+  color: var(--color-neutral-0);
+  flex-wrap: nowrap;
+  font-size: 1em;
+  text-align: left;
+  padding: 0.5em 1em 0.5em 0.5em;
+  background-repeat: no-repeat;
+  background-position: 95% center;
+}
+
+.selectOption[data-selected="true"] {
+  background-image: url("/src/assets/images/icon-checkmark.svg");
+}
+
+.selectOption:hover {
+  background-color: var(--color-neutral-600);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.iconCheck {
+  height: 0.75em;
+  justify-self: center;
+}

@@ -1,0 +1,46 @@
+.weatherDayContainer {
+  margin: 2em 1em 3em;
+  padding: 1em 0.5em;
+  gap: 1em;
+  grid-area: hourly;
+}
+
+.weatherDayHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weatherDayTitle {
+  color: var(--color-neutral-0);
+  font-family: "DM Sans";
+  margin: 0;
+}
+
+.btnDay {
+  text-transform: capitalize;
+}
+
+.hourlyContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  max-height: calc(30px * 13 + 2em);
+  overflow-y: scroll;
+}
+
+@media screen and (min-width: 1024px) {
+  .weatherDayContainer {
+    margin-bottom: 0;
+    padding-bottom: .5em;
+  }
+
+  .weatherDayTitle {
+    font-size: 0.9em;
+  }
+
+  .hourlyContent {
+    max-height: 460px;
+  }
+}

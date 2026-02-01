@@ -1,0 +1,13 @@
+.cardInfoField,
+.cardInfoValue {
+  font-family: "DM Sans";
+}
+
+.cardInfoField {
+  color: var(--color-neutral-300);
+}
+
+.cardInfoValue {
+  color: var(--color-neutral-0);
+  font-size: 1.5em;
+}
